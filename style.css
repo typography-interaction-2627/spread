@@ -1,0 +1,89 @@
+/* This is from Google Fonts `<> Get embed code` → `@import` option. */
+/* Instead of the `<style>` tag they give you, since we are already in CSS! */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* These font files are in our repo (as the license allows). */
+@font-face {
+	font-family: 'EB Garamond'; /* For quote use below! */
+	font-style: normal;
+	src: url('eb-garamond-regular.woff2') format('woff2');
+}
+
+/* Note the family is the same but the style/file are different. */
+@font-face {
+	font-family: 'EB Garamond';
+	font-style: italic;
+	src: url('eb-garamond-italic.woff2') format('woff2');
+}
+
+
+
+/* Our base styles. */
+/* This could also be `html { … }` */
+:root {
+	/* Our base color/font properties will `inherit` to everything. */
+	color: black;
+	font-family: 'EB Garamond', sans-serif;
+	font-size: 150%;
+	line-height: 175%;
+}
+
+/* Change the font for these. */
+h3, li, summary {
+	font-family: 'Work Sans', sans-serif; /* From the Google `@import`. */
+	text-transform: uppercase;
+}
+
+/* All my headings… */
+h1, h2, h3 {
+	color: red;
+	line-height: 0.8; /* Tighten leading on our big type, a.k.a. `80%`. */
+	text-wrap: balance; /* Trick for more even “ragging”! */
+}
+
+/* Bigger headings. */
+h1 { font-size: 7rem; }
+h2 { font-size: 5rem; }
+
+h3 {
+	color: darkgray; /* Note it overrides the one above, via the “cascade.” */
+	font-size: 2rem;
+	font-weight: 300; /* This font has 100–900 weights; some only have normal/bold. */
+	letter-spacing: 0.3em; /* Spreads these out. */
+}
+
+/* The reset clears this default, so we add it back. */
+em { font-style: italic; }
+
+/* Same for links. */
+a { color: firebrick; }
+
+/* I only want the underline when they are inline/within my `p`. */
+p a {
+	text-decoration: underline;
+}
+
+/* This could also be written “nested”:
+p {
+	a {
+		text-decoration: underline;
+	}
+}
+*/
+
+pre {
+	font-family: 'IBM Plex Mono', monospace; /* My other Google font. */
+	font-size: 1.25rem;
+	font-style: italic;
+	opacity: 20%; /* Fade these back. */
+}
+
+blockquote {
+	font-size: 1.75rem;
+	line-height: 1; /* Tighter than base `175%`, a.k.a. `100%`. */
+}
+
+
+/* Just space stuff out while we do our basic color/type: */
+body { padding: 3rem; }
+*:where(:not(:first-child)) { margin-block-start: 1em; }
