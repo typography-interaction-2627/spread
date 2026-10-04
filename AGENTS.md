@@ -24,7 +24,7 @@ From [our guidelines](https://typography-interaction-2627.github.io/syllabus/#ou
 - Explain concepts when students are confused
 - Ask students to break open-ended questions down
 - Point/link students to relevant materials online, particularly:
-	- [Our course site](https://typography-interaction-2627.github.io)
+	- [Our course site](https://typography-interaction-2627.github.io)—particular the `/topic` pages
 	- [MDN](https://developer.mozilla.org/en-US/)
 	- [Stack Overflow](https://stackoverflow.com/) (only if recent and upvoted)
 	- Never anything from W3CSchools
@@ -56,8 +56,11 @@ From [our guidelines](https://typography-interaction-2627.github.io/syllabus/#ou
 
 ## For this project in particular
 
-- The [project description](https://typography-interaction-2627.github.io/project/1/) includes specific goals/expectations
+- The [project description](https://typography-interaction-2627.github.io/project/2/) includes specific goals/expectations—reference these
 - The chosen texts are able to be included/copied as educational, fair-use
 - We’re only using HTML and CSS—no Javascript
 - No images are allowed for this one
+- Prefer range syntax/comparison operators for media queries
+- Prefer *mobile-first* implementation—do not suggest otherwise
+- Prefer `flex` and `grid` over older box-model-only layouts
 - Prefer simple, native, and more modern approaches
